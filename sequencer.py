@@ -24,10 +24,10 @@ gc.enable()
 def seq_it(mode='RGB', name='20x15.txt', alg='breadth'):
     '''
     this function works as follows:
-    it crates cells with color choses then it concatenates cells into stripes,and finally in concatenates stripes into images
-    row by row. For rgb it for every image in the sequence it goes 3 times for 3 channels. That is why, there are so many loops int there!
+    it creates cells with colors chosen then it concatenates cells into stripes,and finally in concatenates stripes into images
+    row by row. For rgb for every image in the sequence it goes 3 times for 3 channels. That is why, there are so many loops int there!
 
-    Do not use pyplot functionality in here to save the pictures, it slows down enormously.  That's why it's commented
+    Do not use pyplot functionality in here to save the pictures, it slows down enormously. 
 
     Args:
         mode (str): RGB or Simple. It's better to use RGB. And it works ok. 3 channels, deeper resolution for cells
@@ -218,7 +218,7 @@ def seq_it(mode='RGB', name='20x15.txt', alg='breadth'):
         print('Animating in SIMPLE mode, it may also take time. For larger data please consider to use ANOTHER APP:)).\n\n ***')
 
         NW = None
-        if alg == 'bread':
+        if alg == 'breadth':
             # Names of waves up to exit
             NW = list(range(2, len(path)+2))
         elif alg == 'astr':
